@@ -87,6 +87,39 @@ export class GuiModel {
                         }
                     ]
                 },
+                {
+                    "id": "ContactForm",
+                    "title": { default: "Contact" },
+                    "url": "/contact",
+                    "formFieldList": [
+                        {
+                            "id":   "vorname",
+                            "type": "text",
+                            "name": { default: "Vorname" },
+                            "required": true,
+                            "width": 2
+                        },
+                        {
+                            "id": "nachname",
+                            "type": "text",
+                            "name": { default: "Nachname" },
+                            "newRow": true,
+                            "width": 2
+                        },
+                        {
+                            "type": "deleteButton",
+                            "name": "Delete"
+                        },
+                        {
+                            "type": "cancelButton",
+                            "name": "Cancel"
+                        },
+                        {
+                            "type": "okButton",
+                            "name": "Ok"
+                        }
+                    ]
+                },
             ],
             "pageList": [
                 {
@@ -104,6 +137,15 @@ export class GuiModel {
                             "icon": "fa-file-alt",
                             "color": "wet-asphalt",
                             "page": "toDoPage",
+                            "width": 2,
+                            "newRow": true,
+                        },
+                        {
+                            "type": "button",
+                            "name": { default: "THAYAAGH CONTACTS" },
+                            "icon": "fa-address-book",
+                            "color": "blue",
+                            "page": "contactPage",
                             "width": 2,
                             "newRow": true,
                         },
@@ -134,6 +176,35 @@ export class GuiModel {
                             "url": "/todo",
                             "form": {
                                 "form": "ToDoForm"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "id": "contactPage",
+                    "elementList": [
+                        {
+                            "type": "backbutton",
+                        },
+                        {
+                            "type": "newButton",
+                            "name": { default: "Neuer Kontakt"},
+                            "icon": "fa-address-book",
+                            "color": "green",
+                            "width": 2,
+                            "form" : {
+                                "form" : "ContactForm"
+                            }
+                        },
+                        {
+                            "type": "list",
+                            "name": "Contact",
+                            "icon": "fa-address-book",
+                            "color": "blue",
+                            "search": true,
+                            "url": "/contact",
+                            "form": {
+                                "form": "ContactForm"
                             }
                         }
                     ]
