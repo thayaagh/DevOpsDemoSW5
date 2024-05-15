@@ -32,6 +32,7 @@ test {
     finalizedBy jacocoTestReport // report is always generated after tests run
 }
 
+// Coverage report
 jacocoTestReport {
 	reports {
 		xml.required = true
