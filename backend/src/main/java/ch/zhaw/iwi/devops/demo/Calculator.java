@@ -19,4 +19,15 @@ public class Calculator {
         }
         return a / b;
     }
+
+    public int modulo(int a, int b) {
+        if (b == 0) {
+            throw new IllegalArgumentException("Division by zero is not allowed");
+        }
+        return a % b;
+    }
+
+    public int isEven(int a) {
+        return a % 2 == 0 ? 1 : 0;
+    }
 }
