@@ -39,4 +39,20 @@ public class CalculatorTest {
             assertEquals("Division by zero is not allowed", e.getMessage());
         }
     }
+
+    @Test
+    void testModulo() {
+        Calculator calculator = new Calculator();
+        assertEquals(1, calculator.modulo(5, 2));
+    }
+
+    @Test
+    void testModuloByZero() {
+        Calculator calculator = new Calculator();
+        try {
+            calculator.modulo(6, 0);
+        } catch (IllegalArgumentException e) {
+            assertEquals("Division by zero is not allowed", e.getMessage());
+        }
+    }
 }
