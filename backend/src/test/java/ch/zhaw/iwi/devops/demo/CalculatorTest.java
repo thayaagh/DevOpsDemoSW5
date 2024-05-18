@@ -55,4 +55,10 @@ public class CalculatorTest {
             assertEquals("Division by zero is not allowed", e.getMessage());
         }
     }
+
+    @Test
+    void testIsEven() {
+        Calculator calculator = new Calculator();
+        assertEquals(1, calculator.isEven(2));
+    }
 }
