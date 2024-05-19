@@ -61,4 +61,10 @@ public class CalculatorTest {
         Calculator calculator = new Calculator();
         assertEquals(1, calculator.isEven(2));
     }
+
+    @Test
+    void testIsOdd() {
+        Calculator calculator = new Calculator();
+        assertEquals(0, calculator.isEven(3));
+    }
 }
