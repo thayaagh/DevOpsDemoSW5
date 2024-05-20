@@ -151,9 +151,9 @@ export class GuiModel {
                         },
                         {
                             "type": "button",
-                            "name": { default: "TEST" },
+                            "name": { default: "DEMO CLOUD DEPLOYMENT" },
                             "icon": "fa-cloud",
-                            "color": "green",
+                            "color": "blue",
                             "page": "contactPage",
                             "width": 2,
                             "newRow": true,
