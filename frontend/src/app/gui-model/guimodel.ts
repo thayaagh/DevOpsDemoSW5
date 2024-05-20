@@ -149,6 +149,15 @@ export class GuiModel {
                             "width": 2,
                             "newRow": true,
                         },
+                        {
+                            "type": "button",
+                            "name": { default: "TEST" },
+                            "icon": "fa-cloud",
+                            "color": "green",
+                            "page": "contactPage",
+                            "width": 2,
+                            "newRow": true,
+                        },
                     ]
                 },
                 {
