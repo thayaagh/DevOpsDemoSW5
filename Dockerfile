@@ -14,8 +14,10 @@ RUN cd frontend && npm run build
 RUN mv frontend/dist frontend/static
 RUN mv frontend/static backend/src/main/resources
 RUN rm -r frontend
-RUN cd backend && chmod +x gradlew
-RUN cd backend && gradlew build
+
+WORKDIR /usr/src/app/backend
+RUN chmod +x gradlew
+RUN ./gradlew build
 
 EXPOSE 8080
 CMD ["java", "-jar", "/usr/src/app/backend/build/libs/demo-0.0.1-SNAPSHOT.jar"]
