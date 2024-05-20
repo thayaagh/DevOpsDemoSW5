@@ -135,7 +135,7 @@ export class GuiModel {
                             "type": "button",
                             "name": { default: "ToDo-List" },
                             "icon": "fa-file-alt",
-                            "color": "wet-asphalt",
+                            "color": "sun-flower",
                             "page": "toDoPage",
                             "width": 2,
                             "newRow": true,
@@ -144,7 +144,7 @@ export class GuiModel {
                             "type": "button",
                             "name": { default: "THAYAAGH CONTACTS" },
                             "icon": "fa-address-book",
-                            "color": "blue",
+                            "color": "pomegranate",
                             "page": "contactPage",
                             "width": 2,
                             "newRow": true,
@@ -171,7 +171,7 @@ export class GuiModel {
                             "type": "list",
                             "name": "ToDo",
                             "icon": "fa-user",
-                            "color": "wet-asphalt",
+                            "color": "emerald",
                             "search": true,
                             "url": "/todo",
                             "form": {
@@ -190,7 +190,7 @@ export class GuiModel {
                             "type": "newButton",
                             "name": { default: "Neuer Kontakt"},
                             "icon": "fa-address-book",
-                            "color": "green",
+                            "color": "midnight-blue",
                             "width": 2,
                             "form" : {
                                 "form" : "ContactForm"
@@ -200,7 +200,7 @@ export class GuiModel {
                             "type": "list",
                             "name": "Contact",
                             "icon": "fa-address-book",
-                            "color": "blue",
+                            "color": "pomegranate",
                             "search": true,
                             "url": "/contact",
                             "form": {
